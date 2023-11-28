@@ -1,0 +1,171 @@
+\documentclass[a4paper,12pt]{letter}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{nopageno}
+\usepackage[a4paper, total={7.5in, 11.25in}]{geometry}
+
+\begin{document}
+
+%\pagestyle{empty}
+
+Név: \hrulefill\ Neptun kód: \hrulefill
+
+\begin{center}
+ (VH-MIT0009-N) Python programozás alapok 1.~zárthelyi dolgozat
+
+ ``A'' csoport
+ \end{center}
+
+ \begin{enumerate}
+ \item Szövegfeldolgozás:
+   \begin{enumerate}
+   \item Deklaráljon hat szövegváltozót és inicializálja az alábbi vers soraival. Írja ki a változókat a képernyőre! \\ \\Testem-létem utánad nyúl\\a tér sem szabhat határt\\időfolyamok végtelen sodrában\\élek hát miattad tovább\\majd beérlek, lecsapok rád\\és megvívjuk a holtak harcát.\\ \\(Vilmer Battinos, 2007-2123) \hfill (2~pont)
+   \item Egyesítse egy string változóban a sorokat szóközzel elválasztva! Írja ki a változó tartalmát a képernyőre! \hfill (3~pont)
+   \item Cserélje ki a magyar ékezetes karaktereket a Latin1 kiosztás karaktereire! Írja ki az eredményt a képernyőre! \hfill (5~pont)
+   \item Hány magán- és mássalhangzó van a szövegben? Írja ki a képernyőre! \hfill (5~pont)
+   \item Melyik karakterből mennyi található a szövegben? Írja ki a megtalálható karaktereket és mellé a számukat a szövegben tartalmazó párokat egymás alá! \hfill (5~pont)
+   \end{enumerate}
+ \item Listák összefűzése
+\begin{enumerate}
+   \item Generáljon két maximum 20 elem hosszúságú listát, amely 0 és 255 közötti egészszámokat tartalmaz! Írja ki őket a képernyőre!  \hfill (5~pont)
+     \item Fűzze össze a listákat úgy, hogy előbb az egyikből, majd a másikból vegyen ki egy elemet és helyeze az úk listába! Amikor az rövidebb lista elemei elfogynak, a maradék listából vegye az elemeket! Írja ki az újlista elemeit egymás mellé! \hfill (10~pont)
+ \end{enumerate}
+\item Az $a x^2+b x + c = 0$ alakú másodfokú egyelet megoldása az ($x \in \mathbb{C}$) komplex számok halmazán, ahol $a, b, c \in \mathbb{Z}$.
+  \begin{enumerate}
+  \item Vegyen fel tetszőleges egész a, b és c változót! Írja ki $a x^2+b x + c = 0$ alapban! \hfill (2~pont)
+  \item Hány komplex ($x\in\mathbb{C}$) és hány valós ($x\in\mathbb{R}$) gyöke van az egyenletnek? Kezelje az összes lehetséges variációt a kódban! \hfill (6~pont)
+  \item Írja ki az egyenlet gyökeit! A komplex gyököket írja ki $e+f \cdot i$ alakban, ahol $e, f \in \mathbb{R}$ és $i=\sqrt{1}$ imaginárius egység. \hfill (7~pont)
+  \end{enumerate}
+ \end{enumerate}
+
+A két zárhelyi dolgozatra összesen maximum 100 pont adható, 50-64 pont elégséges (2), 65-70 pont közepes (3), 71-84 pont jó (4) és 85-100 pont jeles (5). Ha a feladat nem teljesíthető a hallgatói gépterem munkaállomásainak konfigurációs hibái miatt, vagy azért, mert nem egyértelműen kitűzött, akkor az adott feladat mindenki számára maximális pontszámmal veendő figyelembe.
+
+\bigskip
+
+\rightline{Facskó Gábor}
+\rightline{\textit{facsko.gabor@uni-milton.hu}}
+\leftline{Budapest, 2023. október 30.}
+
+\vfill
+
+\newpage
+
+Név: \hrulefill\ Neptun kód: \hrulefill
+
+\begin{center}
+ (VH-MIT0009-N) Python programozás alapok 1.~zárthelyi dolgozat\\
+ \smallskip
+ ``B'' csoport
+ \end{center}
+
+ \begin{enumerate}
+ \item Szövegfeldolgozás:
+   \begin{enumerate}
+   \item Deklaráljon négy szövegváltozót és inicializálja az alábbi vers soraival. Írja ki a változókat a képernyőre! \\  \\``Álltak az állatok,\\előttük zárt ajtók.\\Lövöldöztek rájuk,\\eljött a haláluk.''\\ \\– Egy kisfiú versikéje \hfill (2~pont)
+   \item Egyesítse egy string változóban a sorokat szóközzel elválasztva! Írja ki a változó tartalmát a képernyőre! \hfill (3~pont)
+   \item Cserélje ki a magyar ékezetes karaktereket a Latin1 kiosztás karaktereire! Írja ki az eredményt a képernyőre! \hfill (5~pont)
+   \item Hány dupla mássalhangzó van a szövegben? Írja ki a dupla mássalhangzókat és a számukat tartaslmazó párokat egymás alá! \hfill (5~pont)
+   \end{enumerate}
+ \item Műveletek listákkal. 
+   \begin{enumerate}
+   \item Műholdak irányításában és a kvantummechanikában alkalmazzuk a kvaterniókat. Ezek $a+b\cdot i+c\cdot j+d\cdot k$ alakban felírható számnégyesek, ahol $a, b, c, d \in \mathbb{R}$, $i^2=j^2=k^2=ijk=-1$, továbbá $i\cdot j=k$, $j\cdot k=i$, $k\cdot i=j$, $j\cdot i=-k$, $k\cdot j=-i$, és $i\cdot k=-j$. Valósítson meg két kvaterniót és írja ki őket a képernyőre $a+b\cdot i+c\cdot j+d\cdot k$ alakban, ahol $a, b, c, d \in \mathbb{R}$! \hfill (4~pont)
+   \item Adja össze őket és írja ki az összeadás eredményét a képernyőre!  \hfill (2~pont)
+   \item Vonja ki őket egymásból őket és írja ki a kivonás eredményét a képernyőre!  \hfill (2~pont)
+   \item Szorozza össze őket egymással és írja ki a szorzás eredményét a képernyőre! \hfill (2~pont)
+   \end{enumerate}
+ \item Műveletek tömbökkel.
+   \begin{enumerate}
+   \item Tekintsük $\mathbf{A}=\begin{pmatrix}1 & 2 & 3  \\ 2  & 1 & 2 \\ 3 & 2  & 1 \end{pmatrix}$ és $\mathbf{B}=\begin{pmatrix}2 & 0 & 0  \\ 0  & 5 & 0 \\ 0 & 0  & 7 \end{pmatrix}$ mátrixokat! Valósítsa meg őket tetszőleges adatszerkezettel (pl. lista, 2D-s tömb) és ábrázolja őket! \hfill (4~pont)
+   \item Adja össze a mátrixokat egymással és írja ki a képernyőre az összeadás eredményét! \hfill (2~pont)
+   \item Vonja ki a mátrixokat egymásból és írja ki a képernyőre a a kivonás eredményét! \hfill (2~pont)
+   \item Szorozza össze a mátrixokat egymással és írja ki a képernyőre a kivonás eredményét! \hfill (4~pont)    \item Számolja ki a mátrixok determinánsait! Invertálhatóak-e ezek a mátrixok? \hfill (4~pont)
+   \item A $\mathbf{v}$ nemnulla vektort az $\mathbf{A}$ egy sajátvektorának nevezzük, ha létezik olyan $\lambda \in \mathbb{R}$ skalár, hogy teljesül az $\mathbf{A}\mathbf{v}=\lambda \mathbf{v}$ egyenlőség. A $\lambda$ skalárt az $\mathbf{A}$ egy $\mathbf{v}$ sajátvektorához tartozó sajátértékének nevezzük, ha $\mathbf{A}\mathbf{v}=\lambda \mathbf{v}$. Határozza meg a két megadott mátrix sajátértékeit és sajátvektorait! (Segítség: olda meg a $\left|\mathbf{A}-\lambda\mathbf{I}\right|$ egyenletet, ahol $\mathbf{I}$ az egységmátrix.) \hfill (7~pont)
+   \end{enumerate}
+ \end{enumerate}
+
+A két zárhelyi dolgozatra összesen maximum 100 pont adható, 50-64 pont elégséges (2), 65-70 pont közepes (3), 71-84 pont jó (4) és 85-100 pont jeles (5). Ha a feladat nem teljesíthető a hallgatói gépterem munkaállomásainak konfigurációs hibái miatt, vagy azért, mert nem egyértelműen kitűzött, akkor az adott feladat mindenki számára maximális pontszámmal veendő figyelembe.
+
+\bigskip
+
+\rightline{Facskó Gábor}
+\rightline{\textit{facsko.gabor@uni-milton.hu}}
+\leftline{Budapest, 2023. október 30.}
+
+\vfill
+
+\newpage
+
+Név: \hrulefill\ Neptun kód: \hrulefill
+
+\begin{center}
+ (VH-MIT0009-N) Python programozás alapok 1.~zárthelyi dolgozat
+
+ ``C'' csoport
+ \end{center}
+
+ \begin{enumerate}
+ \item Szövegfeldolgozás:
+  \begin{enumerate}
+   \item Deklaráljon hét szövegváltozót és inicializálja az alábbi vers soraival. Írja ki a változókat a képernyőre! \\ \\''― The Viking Prayer\\ \\“Lo, there do I see my father.\\Lo, there do I see my mother,\\and my sisters, and my brothers.\\Lo, there do I see the line of my people,\\Back to the beginning!\\ \\Lo, they do call to me.\\They bid me take my place among them,\\In the halls of Valhalla!\\Where the brave may live forever!”\\ \\― Michael Alexander, Risen from Ashes \hfill (2~pont)
+   \item Egyesítse egy string változóban a sorokat szóközzel elválasztva! Írja ki a változó tartalmát a képernyőre! \hfill (3~pont)
+   \item Darabolja fel a szöveget szavakra! Melyik szóból hány darab található a szövegben? Írja ki a szó--szavak száma a szövegben párokat egymás alá! \hfill (10~pont)
+   \end{enumerate}
+ \item Adatszerkezetek
+   \begin{enumerate}
+   \item A Mandelbrot-halmaz azon $c \in \mathbb{C}$ számokból áll (a komplex számsík azon pontjainak mértani helye, halmaza), melyekre az $x_{n}$  rekurzív sorozat, ahol $x_{1}=0$ és $x_{n+1}=\left(x_{n}\right)^2+c$,  amelyre $x_{n}, c \in \mathbb{C}$ és $n \in \mathbb{N}^{+}$ nem tart végtelenbe, azaz abszolút értékben (hosszára nézve) korlátos. Hozzon létre komplex számsíkot reprezentáló adatszerkezetet (pl. 2D tömböt, vagy valós képzetes párokból álló listát), amelynek mérete egy önkényesen felvett $N \in \mathbb{N}^{+}$ pozitív természetes szám (pl. 20). Írja ki a számokat! \hfill (5~pont)
+     \item A fent megvalósított komplex számsík elemeiről döntse el, hogy melyik a Maldenbrot-halmaz része! (Segítség: a Maldenbrot halmaz minden eleme egy 2 sugarú körben található az origó körül. Továbbá, ha az adott $c\in\mathbb{C}$ szám önkényesen választott M iteráció után nem divergál, akkor már nem valószínű, hogy fog. M értéke lehet pl. 100.) \hfill (30~pont)
+   \end{enumerate}
+ \end{enumerate}
+
+A két zárhelyi dolgozatra összesen maximum 100 pont adható, 50-64 pont elégséges (2), 65-70 pont közepes (3), 71-84 pont jó (4) és 85-100 pont jeles (5). Ha a feladat nem teljesíthető a hallgatói gépterem munkaállomásainak konfigurációs hibái miatt, vagy azért, mert nem egyértelműen kitűzött, akkor az adott feladat mindenki számára maximális pontszámmal veendő figyelembe.
+
+\bigskip
+
+\rightline{Facskó Gábor}
+\rightline{\textit{facsko.gabor@uni-milton.hu}}
+\leftline{Budapest, 2023. október 30.}
+
+\vfill
+
+\newpage
+
+Név: \hrulefill\ Neptun kód: \hrulefill
+
+\begin{center}
+ (VH-MIT0009-N) Python programozás alapok 1.~zárthelyi dolgozat
+
+ ``D'' csoport
+ \end{center}
+
+ \begin{enumerate}
+ \item Szövegfeldolgozás:
+  \begin{enumerate}
+  \item Deklaráljon egy szövegváltozót és inicializálja az alábbi vers soraival. Írja ki a változót a képernyőre! \\ \\O Elbereth Starkindler,\\white-glittering, slanting falls, sparkling like jewels,\\from the firmament the glory of the starry host!\\Having gazed afar into remote distance\\from the tree-tangled Middle-lands,\\Everwhite, to thee I will chant\\on this side of the ocean, here on this side of the Great Ocean!\\ \\O Elbereth Starkindler,\\from heaven gazing afar,\\to thee I cry here beneath the shadow of death!\\O look towards me, Everwhite!     \hfill (5~pont)
+  \item Hány magán- és mássalhangzó van a szövegben? \hfill (5~pont)
+  \item Melyik karakterből mennyi található a szövegben? Írja ki a megtalálható karaktereket és mellé a számukat a szövegben tartalmazó párokat egymás alá! \hfill (5~pont)
+   \end{enumerate}
+ \item Adatszerkezetek
+   \begin{enumerate}
+   \item Valósítson meg egy binális keresőfát listával! A fa csúcsai olyan rendezett szám hármasok legyenek, amelynek az első eleme a csúcs értéke, a második a bal oldali csúcs indexe, vagy -1, ha ilyen nincs, a harmadik a jobb oldali csúcs indexe, vagy -1, ha ilyen nincs. A csúcstól soronként lefelé haladva balról jobbra nőjjön az csúcsok értéke! Töltse fel a binális fát az egy és két jegyű prímszámokkal és írja ki az eredményt! (Pl. minden sort egymás alá, megfelelő tabulálással, amellyel a faszerkezet észlelhető.) \hfill (5~pont)
+   \item Törölje ki a 23-as és a 41-es értékű csúcsokat! Rendezze át a keresőfát és írja ki a képernyőre az eredményt! \hfill (10~pont)
+   \item Szúrja be a 8-as és a 81-es számokat! Rendezze át a keresőfát és írja ki a képernyőre az eredményt! \hfill (10~pont)
+    \item Keresse meg a 43-as elemet! Írja ki a hozzá vezető csúcsok indexét a listában egymás mellett szóközzel elválasztva! \hfill (5~pont)
+    \end{enumerate}
+  \item Integrál kiszámítása
+    \begin{enumerate}
+    \item Az intergál jól közelíthető a függvény alatti területtel. Tekintsük az $f\left(x\right)=x^{2}$ függvény integrálját az $x \in \left[34,35\right]$ intervallumban! Közelítse a függvény alatti terület értékét a $\sum_{i=1}^{n-1}f\left(x_{i}\right)\left(x_{i+1}-x_{i}\right)$ és a $\sum_{i=1}^{n-1}f\left(x_{i+1}\right)\left(x_{i+1}-x_{i}\right)$ összegekkel, ahol $x_{i}=x_{min}+i \left(x_{max}-x_{min}\right)/n$, $n\in\mathbb{N}^{+}$ és $i \in \left[1,n\right]$. (Segítség: próbálja ki az n=10, 100, 1000, \dots értekeket és vesse össze az eredményeket egymással.) \hfill (5~pont)
+    \end{enumerate}
+    \end{enumerate}
+
+A két zárhelyi dolgozatra összesen maximum 100 pont adható, 50-64 pont elégséges (2), 65-70 pont közepes (3), 71-84 pont jó (4) és 85-100 pont jeles (5). Ha a feladat nem teljesíthető a hallgatói gépterem munkaállomásainak konfigurációs hibái miatt, vagy azért, mert nem egyértelműen kitűzött, akkor az adott feladat mindenki számára maximális pontszámmal veendő figyelembe.
+
+\bigskip
+
+\rightline{Facskó Gábor}
+\rightline{\textit{facsko.gabor@uni-milton.hu}}
+\leftline{Budapest, 2023. október 30.}
+
+\vfill
+
+\end{document}
