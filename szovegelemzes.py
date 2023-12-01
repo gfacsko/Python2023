@@ -28,7 +28,9 @@ szoveg="Lórum ipse azonban nem vényít pólomot. A buggyos lamiái is " \
 
 print (szoveg)
 
+# Kisbetűk
 szoveg=szoveg.lower()
+'''
 szoveg=szoveg.replace("á","a")
 szoveg=szoveg.replace("é","e")
 szoveg=szoveg.replace("í","i")
@@ -37,6 +39,11 @@ szoveg=szoveg.replace("ö","o")
 szoveg=szoveg.replace("ő","o")
 szoveg=szoveg.replace("ü","u")
 szoveg=szoveg.replace("ű","u")
+'''
+# Kicserélem a magyar betűket latinra
+magyarBetuk=[['á','a'],['é','e'],['í','i'],['ö','o'],['ő','o'],['ü','u'],['ű','u']]
+for p in magyarBetuk:
+       szoveg=szoveg.replace(p[0],p[1])
 
 print (szoveg)
 
