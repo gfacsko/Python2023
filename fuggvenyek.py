@@ -5,7 +5,6 @@
 # Milton Friedman University, Budapest, Hungary, 2023
 #
 
-
 import math as m
 
 '''
@@ -33,7 +32,7 @@ def gyokok (a,b,d):
 
 a = 1
 b = 2
-c = 2
+c = 0
 
 print (str(a) + "x^2+"+str(b)+"x+"+str(c)+"=0")
 
@@ -56,9 +55,10 @@ if (d<0):
     print ("Az egyenletnek két complex gyöke van.")
     print ("Az egyenlet complex gyökei: x1=" + str(x[0]) + "-i" + str(x[1]) + "és x2=" +
            str(x[0]) + "+i" + str(x[1]))
+'''
 
 # ====================================================================================================
-
+'''
 # Faktoriális számítás rekurzióval
 
 def fact(n):
@@ -68,8 +68,9 @@ def fact(n):
         return 1
 
 print (fact(20))
-
 '''
+
+
 
 # ====================================================================================================
 
@@ -78,6 +79,9 @@ import matplotlib.pyplot as plt
 from matplotlib import colormaps
 
 # Iteráció
+# x_{n+1} = x_{n}^2+c, ha n>1
+#           c, ha n=1
+# ahol c komplex szám
 # x1 x1 + x1 x2 i + i x2 x1 + i x2 i x2 = x1 x1 - x2 x2 + i (x1 x2 + x2 x1)
 def xnp(x1,x2,c1,c2):
     return ([x1 * x1 - x2 * x2 + c1, x1 * x2 + x2 * x1 + c2])
@@ -86,17 +90,17 @@ def xnp(x1,x2,c1,c2):
 N = 800
 
 # Max iteráció
-M = 100
+M = 80
 
 # Limit
-vMax = 10
+vMax = 2
 
 # Boundaries
-xMin=-2
-xLength=2.5
+xMin=-1#-2
+xLength=0.5#2.5
 xMax=xMin+xLength
-yMin= -1.5
-yLength=3.0
+yMin= 0#-1.5
+yLength=0.5#3.0
 yMax=yMin+yLength
 xStep = xLength/N
 yStep = yLength/N
@@ -135,7 +139,7 @@ plt.scatter(mx,my,s=1,c=mc,cmap=plt.colormaps['jet'])
 plt.xlim([xMin,xMax])
 plt.ylim([yMin,yMax])
 # Cím
-plt.title("Maldenbrot-halmaz")
+plt.title("Maldenbrot halmaz")
 # tengelyfeliratok
 plt.xlabel("Valós")
 plt.ylabel("Képzetes")

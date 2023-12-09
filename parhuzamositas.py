@@ -6,9 +6,9 @@
 #
 # http://faragocsaba.hu/parhuzamositas
 
-'''
-# Generátorok
 
+# Generátorok
+'''
 def generator(n):
     print(f'generátor {n} eleje')
     yield 10 * n + 1
@@ -40,11 +40,11 @@ def lassu_fuggveny(n):
     print(f'Lassú függvény {n} vége')
 
 
-for i in range(3):
+for i in range(30):
     lassu_fuggveny(i)
     time.sleep(0.1)
-'''
 
+'''
 '''
 import asyncio
 
@@ -56,11 +56,10 @@ async def lassu_fuggveny(n):
 
 async def main():
     feladatok = []
-    for i in range(3):
+    for i in range(30):
         feladatok.append(asyncio.create_task(lassu_fuggveny(i)))
     for feladat in feladatok:
         await feladat
-
 
 asyncio.run(main())
 '''
@@ -70,7 +69,6 @@ asyncio.run(main())
 # Visszatérési érték
 
 import asyncio
-
 
 async def lassu_osszead(n, a, b):
     print(f'lassú összead {n} eleje')
@@ -83,7 +81,7 @@ async def main():
     osszeadasok = [
         (3, 2),
         (1, 5),
-        (2, 6),
+        (2, 6),(1,9),(17,3),
     ]
     feladatok = []
     for i, osszeadas in enumerate(osszeadasok):
@@ -120,7 +118,6 @@ for i in range(5):
 import asyncio
 import aiofiles
 
-
 async def aszinkron_fajlolvasas(faljnev):
     print(f'Aszinkron fájlolvasás eleje: {faljnev}')
     async with aiofiles.open(faljnev) as f:
@@ -137,7 +134,6 @@ async def main():
         feladatok.append(asyncio.create_task(aszinkron_fajlolvasas(f'szamok{i}.txt')))
     eredmeny = await asyncio.gather(*feladatok)
     print(eredmeny)
-
 
 asyncio.run(main())
 '''
